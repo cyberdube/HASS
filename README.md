@@ -130,10 +130,17 @@ This project is an end-to-end multi-tiered web-based solution for managing vehic
 <img src ="4.png" width ="700" height = "400">
 <img src ="5.png" width ="700" height = "400">
 <img src ="6.png" width ="700" height = "400">
-<img src ="7.png" width ="700" height = "400">
 
 
 ## Database
 
-<img src ="4.png" width ="700" height = "400">
+<img src ="7.png" width ="700" height = "400">
+<img src ="8.png" width ="700" height = "400">
+<img src ="9.png" width ="700" height = "400">
+<img src ="10.png" width ="700" height = "400">
+
+
+
+
+
  
