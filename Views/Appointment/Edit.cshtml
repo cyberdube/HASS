@@ -1,0 +1,33 @@
+﻿@model HASS_v1.Models.Appointment
+
+<h2>Edit Appointment</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="AppointmentId" />
+    <div class="form-group">
+        <label asp-for="PatientId"></label>
+        <input asp-for="PatientId" class="form-control" />
+        <span asp-validation-for="PatientId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DoctorId"></label>
+        <input asp-for="DoctorId" class="form-control" />
+        <span asp-validation-for="DoctorId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AppointmentDate"></label>
+        <input asp-for="AppointmentDate" type="datetime-local" class="form-control" />
+        <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Status"></label>
+        <select asp-for="Status" class="form-control">
+            <option>Scheduled</option>
+            <option>Completed</option>
+            <option>Canceled</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

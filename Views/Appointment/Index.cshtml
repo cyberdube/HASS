@@ -1,0 +1,33 @@
+﻿@model IEnumerable<HASS_v1.Models.Appointment>
+
+<h2>Appointment Management</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Schedule Appointment</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Patient ID</th>
+            <th>Doctor ID</th>
+            <th>Appointment Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            <tr>
+                <td>@appointment.AppointmentId</td>
+                <td>@appointment.PatientId</td>
+                <td>@appointment.DoctorId</td>
+                <td>@appointment.AppointmentDate.ToString("MM/dd/yyyy HH:mm")</td>
+                <td>@appointment.Status</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@appointment.AppointmentId" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@appointment.AppointmentId" class="btn btn-danger btn-sm">Cancel</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

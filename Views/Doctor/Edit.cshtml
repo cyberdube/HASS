@@ -1,0 +1,40 @@
+﻿@model HASS_v1.Models.Doctor
+
+<h2>Edit Doctor</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="DoctorId" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Speciality"></label>
+        <select asp-for="Speciality" class="form-control" />
+
+        <option value="" disabled selected>Select One Speciality</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Pulmonology">Pulmonology</option>
+        <option value="Endocrinology">Endocrinology</option>
+        <option value="Hematology">Hematology</option>
+        <option value="Oncology">Oncology</option>
+        <option value="Rheumatology">Rheumatology</option>
+        <option value="Radiology">Radiology</option>
+        <option value="Immunology">Immunology</option>
+        <option value="Dermatology">Dermatology</option>
+
+        </select>
+    <div class="form-group">
+        <label asp-for="Availability"></label>
+        <select asp-for="Availability" class="form-control" />
+        <option value="" disabled selected>Available/Not Available</option>
+        <option value="Available">Available</option>
+        <option value="Not Available">Not Available</option>
+        </select>
+        <span asp-validation-for="Availability" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

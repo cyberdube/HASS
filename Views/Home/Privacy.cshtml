@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h2>Welcome, Admin</h2>
+<p>Please choose a section to manage:</p>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Appointments</div>
+                <div class="card-body">
+                    <a href="@Url.Action("Index", "Appointment")" class="btn btn-light btn-block">View All</a>
+                    <a href="@Url.Action("Create", "Appointment")" class="btn btn-light btn-block">Create</a>
+                    <a href="@Url.Action("Edit", "Appointment")" class="btn btn-light btn-block">Edit (Sample)</a>
+                    <a href="@Url.Action("Delete", "Appointment", new { id = 1 })" class="btn btn-light btn-block">Delete (Sample)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Doctors</div>
+                <div class="card-body">
+                    <a href="@Url.Action("Index", "Doctor")" class="btn btn-light btn-block">View All</a>
+                    <a href="@Url.Action("Create", "Doctor")" class="btn btn-light btn-block">Create</a>
+                    <a href="@Url.Action("Edit", "Doctor", new { id = 1 })" class="btn btn-light btn-block">Edit (Sample)</a>
+                    <a href="@Url.Action("Delete", "Doctor", new { id = 1 })" class="btn btn-light btn-block">Delete (Sample)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header">Medical Records</div>
+                <div class="card-body">
+                    <a href="@Url.Action("Index", "MedicalRecord")" class="btn btn-light btn-block">View All</a>
+                    <a href="@Url.Action("Create", "MedicalRecord")" class="btn btn-light btn-block">Create</a>
+                    <a href="@Url.Action("Edit", "MedicalRecord", new { id = 1 })" class="btn btn-light btn-block">Edit (Sample)</a>
+                    <a href="@Url.Action("Delete", "MedicalRecord", new { id = 1 })" class="btn btn-light btn-block">Delete (Sample)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

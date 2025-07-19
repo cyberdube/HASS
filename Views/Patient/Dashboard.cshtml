@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Patient Dashboard";
+}
+
+<h2>Welcome to Your Dashboard</h2>
+
+<div class="text-center">
+    <a asp-controller="PatientAppointment" asp-action="Create" class="btn btn-success">Schedule Appointment</a>
+    <a asp-controller="PatientAppointment" asp-action="MyAppointments" class="btn btn-info">View Appointments</a>
+    <a asp-controller="PatientMedicalRecord" asp-action="MyRecords" class="btn btn-warning">View Medical Records</a>
+</div>

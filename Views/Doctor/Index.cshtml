@@ -1,0 +1,31 @@
+﻿@model IEnumerable<HASS_v1.Models.Doctor>
+
+<h2>Doctor Management</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Add Doctor</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>DoctorId</th>
+            <th>Name</th>
+            <th>Speciality</th>
+            <th>Availability</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctor in Model)
+        {
+            <tr>
+                <td>@(doctor.DoctorId + 100)</td>
+                <td>@doctor.Name</td>
+                <td>@doctor.Speciality</td>
+                <td>@doctor.Availability</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@doctor.DoctorId" class="btn btn-warning btn-sm">Update</a>
+                    <a asp-action="Delete" asp-route-id="@doctor.DoctorId" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<HASS_v1.Models.MedicalRecord>
+
+<h2>My Medical Records</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Diagnosis</th>
+            <th>Treatment</th>
+            <th>Doctor ID</th>
+            <th>Date</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.Diagnosis</td>
+                <td>@record.Treatment</td>
+                <td>@record.DoctorId</td>
+                <td>@record.RecordDate.ToString("MM/dd/yyyy")</td>
+                <td>@record.AdditionalNotes</td>
+            </tr>
+        }
+    </tbody>
+</table>

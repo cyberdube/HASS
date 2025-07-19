@@ -1,0 +1,31 @@
+﻿@model IEnumerable<HASS_v1.Models.MedicalRecord>
+
+<h2>Medical Records Management</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Add Medical Record</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th>Diagnosis</th>
+            <th>Treatment</th>
+            <th>Record Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.PatientId</td>
+                <td>@record.Diagnosis</td>
+                <td>@record.Treatment</td>
+                <td>@record.RecordDate.ToString("MM/dd/yyyy")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@record.MedicalRecordId" class="btn btn-warning btn-sm">Update</a>
+                    <a asp-action="Delete" asp-route-id="@record.MedicalRecordId" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
