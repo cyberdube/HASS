@@ -1,61 +1,66 @@
-<!-- which  -->
-# Vehicle Service Management System
- 
-##  Overview
+# Hospital Appointment Scheduling and Management System
 
-This project is an end-to-end multi-tiered web-based solution for managing vehicle services. It is designed for Prime Automobiles Pvt. Ltd., a car sales and service company based in Pune, to track service history of sold vehicles and initiate scheduled servicing with customers. The system includes functionalities for both Admin and Service Advisor roles.
+## Overview
 
-
+This is a full-stack hospital management solution developed using the **Model-View-Controller (MVC)** architecture entirely in **ASP.NET Core MVC**. The system is designed to facilitate efficient scheduling and management of doctor appointments for a multi-specialty hospital. It provides role-based functionalities for **Admins**, **Doctors**, and **Patients**, including appointment booking, scheduling, tracking, and patient record management.
 
 ## Technologies Used
-### Back-End
-- **Programming Language:** C#
-- **Frameworks:** ASP.NET Core MVC, ASP.NET Core Web API, Entity Framework
+
+- **Language:** C#
+- **Framework:** ASP.NET Core MVC
+- **ORM:** Entity Framework Core
 - **Database:** SQL Server
-- **Architecture:** Microservices
-
-### Front-End
-- **Framework:** Angular
-- **Technologies:** HTML5, CSS3, Bootstrap
-
-### Tools
-- **IDE:** Visual Studio Community Edition
-- **Version Control:** GIT
-- **Package Manager:** Node.js/NPM
-
-
+- **Architecture:** MVC (Monolithic)
+- **IDE:** Visual Studio 2022 Community Edition
+- **Version Control:** Git/GitHub
 
 ## Features
 
 ### Admin Functionality
 1. **Dashboard:**
-   - List of vehicles due for servicing in the current week.
-   - List of vehicles currently under servicing.
-   - List of vehicles serviced with status information.
-2. **Service Scheduling:**
-   - Schedule a vehicle for servicing with a selected Service Advisor.
-3. **Service Completion:**
-   - Print invoice, process payment, and dispatch after service completion.
-4. **Master Data Management:**
-   - Create, update, delete, and search for Vehicles, Customers, Service Representatives, and Work Items (e.g., Engine Oil, Fuel Filter, Service Charges).
+   - Overview of appointments (Pending, Approved, Completed).
+   - Summary of active doctors and patients.
+2. **Doctor Management:**
+   - Add, edit, or remove doctor profiles.
+   - Assign specializations and availability timings.
+3. **Patient Management:**
+   - View and manage patient records.
+   - View appointment history.
+4. **Appointment Management:**
+   - View, approve, or cancel scheduled appointments.
 
-### Service Advisor Functionality
+### Doctor Functionality
 1. **Dashboard:**
-   - List of vehicles scheduled for servicing.
-2. **Service Recording:**
-   - Add items to the Bill of Material (e.g., Oil change, Wheel alignment) and complete the service record.
-   - Pre-decided costs for items which cannot be changed by Service Advisors.
+   - List of upcoming approved appointments.
+   - View patient details and appointment history.
+2. **Appointment Status:**
+   - Mark appointments as Completed or Cancelled.
+   - Add diagnosis notes or prescriptions.
+
+### Patient Functionality
+1. **Registration & Login:**
+   - Secure registration with validation.
+2. **Appointment Booking:**
+   - Select department, doctor, and preferred time slot.
+   - View booking status.
+3. **Appointment History:**
+   - Track past and upcoming appointments.
 
 ## Deliverables
-- Implementation of all functionalities as per the business requirements and scope.
-- Complete application source code on GitHub.
-- Deployed and working application hosted on a cloud environment.
-- Unit tests and automated functional tests for all functionalities.
-- Use of continuous integration toolchain (optional).
-- Hosting on an Azure cloud platform (optional).
-- Validation for all input fields based on business rules.
-- Implementation of appropriate security features (secure coding, authentication/authorization).
-- Appropriate exception handlers.
+
+- Fully functional MVC-based appointment management application.
+- SQL Server database with normalized schema and relational integrity.
+- Source code hosted on GitHub.
+- Input validation on all forms.
+- Secure login with role-based access (Admin, Doctor, Patient).
+- Exception handling and logging implemented.
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-repo/hospital-appointment-system.git
+cd hospital-appointment-system
 
 
 ## Setup Instructions
