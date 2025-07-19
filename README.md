@@ -105,21 +105,21 @@ This project is an end-to-end multi-tiered web-based solution for managing vehic
 ## Frontend
 
 
-<img src ="10.png" width ="700" height = "400">
+<img src ="a.png" width ="700" height = "400">
 
-<img src ="5.png" width ="700" height = "400">
+<img src ="b.png" width ="700" height = "400">
 
-<img src ="6.png" width ="700" height = "400">
+<img src ="c.png" width ="700" height = "400">
 
-<img src ="7.png" width ="700" height = "400">
-<img src ="8.png" width ="700" height = "400">
+<img src ="d.png" width ="700" height = "400">
+<img src ="e.png" width ="700" height = "400">
 
-<img src ="9.png" width ="700" height = "400">
+<img src ="f.png" width ="700" height = "400">
 
-<img src ="1.png" width ="700" height = "400">
+<img src ="g.png" width ="700" height = "400">
 
 
-<img src ="1.png" width ="700" height = "400">
+<img src ="h.png" width ="700" height = "400">
 
 
 ## Backend
